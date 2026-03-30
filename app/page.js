@@ -2,29 +2,29 @@
 import React, { useState, useEffect } from 'react';
 
 const scheduleItems = [
-  { subtitle: 'Palm Sunday', image: '/PalmSunday.jpg' },
-  { subtitle: 'Holy Monday', image: '/HolyMaundy.jpg' },
-  { subtitle: 'Holy Tuesday', image: '/Holy Tuesday.jpg' },
-  { subtitle: 'Holy Wednesday', image: '/HolyWednesday.jpg' },
-  { subtitle: 'Maundy Thursday', image: '/MaundayThursday.jpg' },
-  { subtitle: 'Good Friday', image: '/GoodFriday.jpg' },
-  { subtitle: 'Sabado de Gloria', image: '/SabadoDeGloria.jpg' },
-  { subtitle: 'Easter Sunday', image: '/EasterSunday.jpg' },
+  { subtitle: 'Palm Sunday', image: '/PalmSunday.webp' },
+  { subtitle: 'Holy Monday', image: '/HolyMaundy.webp' },
+  { subtitle: 'Holy Tuesday', image: '/Holy Tuesday.webp' },
+  { subtitle: 'Holy Wednesday', image: '/HolyWednesday.webp' },
+  { subtitle: 'Maundy Thursday', image: '/MaundayThursday.webp' },
+  { subtitle: 'Good Friday', image: '/GoodFriday.webp' },
+  { subtitle: 'Sabado de Gloria', image: '/SabadoDeGloria.webp' },
+  { subtitle: 'Easter Sunday', image: '/EasterSunday.webp' },
 ];
 
 const apostles = [
-  { name: "Bro. Manuel Quezon", image: "/Manuel.jpg" },
-  { name: "Bro. Cesar Bachar", image: "/Cesar.jpg" },
-  { name: "Bro. Ronie Dancel", image: "/Ronie.jpg" },
-  { name: "Bro. Virgilio Gregorio Jr.", image: "/Virgilio.jpg" },
-  { name: "Bro. Kenneth Antoquia", image: "/Kenneth.jpg" },
-  { name: "Bro. Mario Martin", image: "/Mario.jpg" },
-  { name: "Bro. Nick Guiritan", image: "/Nicomedes.jpg" },
-  { name: "Bro. Serafin Tomas", image: "/Seafin.jpg" },
-  { name: "Bro. Glenn Tadeo", image: "/Glenn.jpg" },
-  { name: "Bro. Roderick Aquino", image: "/Roderick.jpg" },
-  { name: "Bro. Nazer Patricio", image: "/Nazer.jpg" },
-  { name: "Bro. Frebert Jose", image: "/Frebert.jpg" }
+  { name: "Bro. Manuel Quezon", image: "/Manuel.webp" },
+  { name: "Bro. Cesar Bachar", image: "/Cesar.webp" },
+  { name: "Bro. Ronie Dancel", image: "/Ronie.webp" },
+  { name: "Bro. Virgilio Gregorio Jr.", image: "/Virgilio.webp" },
+  { name: "Bro. Kenneth Antoquia", image: "/Kenneth.webp" },
+  { name: "Bro. Mario Martin", image: "/Mario.webp" },
+  { name: "Bro. Nick Guiritan", image: "/Nicomedes.webp" },
+  { name: "Bro. Serafin Tomas", image: "/Seafin.webp" },
+  { name: "Bro. Glenn Tadeo", image: "/Glenn.webp" },
+  { name: "Bro. Roderick Aquino", image: "/Roderick.webp" },
+  { name: "Bro. Nazer Patricio", image: "/Nazer.webp" },
+  { name: "Bro. Frebert Jose", image: "/Frebert.webp" }
 ];
 
 const activities = [
@@ -101,7 +101,7 @@ export default function Page() {
       <div className="landing-wrapper">
         {/* Hero Section */}
         <section className="hero" id="home">
-          <img src="/logo.png" alt="SJP2 Logo" className="hero-logo-img" />
+          <img src="/logo.webp" alt="SJP2 Logo" className="hero-logo-img" />
           <h1>ST. JOHN PAUL II PARISH</h1>
           <p className="subtitle">Semana Santa 2026</p>
           <div className="bible-quote">
@@ -140,7 +140,7 @@ export default function Page() {
               </p>
             </div>
             <div className="about-image-wrapper">
-              <img src="/ChurchOutside.jpg" alt="St. John Paul II Parish" />
+              <img src="/ChurchOutside.webp" alt="St. John Paul II Parish" />
             </div>
           </div>
         </section>
@@ -166,7 +166,7 @@ export default function Page() {
           <div className="senakulo-premier">
             <div className="senakulo-poster-wrapper">
               <a href="https://www.facebook.com/share/p/1DHZf8NTH3/" target="_blank" rel="noopener noreferrer">
-                <img src="/Senakulo.jpg" alt="Senakulo Poster" className="senakulo-poster" />
+                <img src="/Senakulo.webp" alt="Senakulo Poster" className="senakulo-poster" />
               </a>
             </div>
             <div className="senakulo-premier-text glass-panel">

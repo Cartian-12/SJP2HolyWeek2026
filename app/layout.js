@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <nav className="navbar glass-panel">
           <div className="nav-content">
             <a href="#home" className="nav-logo">
-              <img src="/logo.png" alt="SJP2 Logo" className="nav-logo-img" />
+              <img src="/logo.webp" alt="SJP2 Logo" className="nav-logo-img" />
             </a>
             <ul className="nav-links">
               <li><a href="#schedule">Schedule</a></li>
