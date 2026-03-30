@@ -139,9 +139,9 @@ export default function Page() {
                 Dedicated to St. John Paul II, the parish stands as a center of faith, devotion, and community life, offering regular liturgical services and pastoral activities. As one of the newer parishes in the diocese, it continues to foster spiritual growth, active participation, and unity among its parishioners.
               </p>
             </div>
-            <div className="about-image-wrapper">
+            <a href="https://www.facebook.com/profile.php?id=100080028258021" target="_blank" rel="noopener noreferrer" className="about-image-wrapper">
               <img src="/ChurchOutside.webp" alt="St. John Paul II Parish" />
-            </div>
+            </a>
           </div>
         </section>
       </div>
@@ -151,12 +151,63 @@ export default function Page() {
         <h2>Holy Week Schedule</h2>
         <div className="schedule-grid">
           {scheduleItems.map((item, index) => (
-            <div className="glass-panel schedule-card" key={index}>
+            <a href="https://www.facebook.com/share/p/18H81NWCXy/" target="_blank" rel="noopener noreferrer" className="glass-panel schedule-card" key={index}>
               <div className="schedule-image-wrapper">
                 <img src={item.image} alt={`${item.subtitle} Image`} className="schedule-image" />
               </div>
-            </div>
+            </a>
           ))}
+        </div>
+      </section>
+
+      {/* Maundy Thursday Vigil Schedule */}
+      <section className="section-container" id="vigil-schedule">
+        <h2>Maundy Thursday</h2>
+        <p className="text-center text-secondary mb-8" style={{ fontSize: '1.2rem', fontStyle: 'italic' }}>
+          Mass of the Lord&apos;s Supper &mdash; Vigil Schedule
+        </p>
+
+        <div className="vigil-layout">
+          <div className="vigil-image-wrapper">
+            <img src="/vigil.jpg" alt="Maundy Thursday Vigil" className="vigil-image" />
+          </div>
+
+          <div className="vigil-table-wrapper glass-panel">
+            <table className="vigil-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Assigned Barangays / Ministries</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="vigil-time">6:00 &ndash; 7:00 PM</td>
+                  <td>Cayasan, Papaac, Bacsay, Birbira, Manupeg, Collectors Ministry</td>
+                </tr>
+                <tr>
+                  <td className="vigil-time">7:00 &ndash; 8:00 PM</td>
+                  <td>Sitio Ribba, Manaquem, Nagrambacan, Bobon 1st, Bobon Caa., Lectors and Commentators Guild, JPII Choir</td>
+                </tr>
+                <tr>
+                  <td className="vigil-time">8:00 &ndash; 9:00 PM</td>
+                  <td>Bobon 2nd, Anoling 1st, Anoling 2nd, Anoling 3rd</td>
+                </tr>
+                <tr>
+                  <td className="vigil-time">9:00 &ndash; 10:00 PM</td>
+                  <td>Pao 1st, Pao 2nd, Pao 3rd, Catechists, Greeters</td>
+                </tr>
+                <tr>
+                  <td className="vigil-time">10:00 &ndash; 11:00 PM</td>
+                  <td>Palimbo Proper, Sinulatan 2nd, Knights of Columbus</td>
+                </tr>
+                <tr>
+                  <td className="vigil-time">11:00 &ndash; 12:00 AM</td>
+                  <td>Palimbo Caarosipan, Sinulatan 1st, Parish Pastoral Council</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -210,11 +261,11 @@ export default function Page() {
 
         <div className="apostles-grid">
           {apostles.map((apostle, index) => (
-            <div className="glass-panel apostle-card" key={index}>
+            <a href="https://www.facebook.com/share/p/18H8pah4ov/" target="_blank" rel="noopener noreferrer" className="glass-panel apostle-card" key={index}>
               <div className="apostle-image-wrapper">
                 <img src={apostle.image} alt={`${apostle.name} Image`} className="apostle-image" />
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>
@@ -242,8 +293,19 @@ export default function Page() {
         <div className="prayer-content">
           <h2>Prayer for Holy Week</h2>
           <div className="prayer-text">
-            {`Heavenly Father, as we enter this Holy Week, we come before You with humble hearts. We remember the suffering, sacrifice, and great love of  Your Son, Jesus Christ, who gave His life for our salvation.  Lord Jesus, teach us to walk with You in Your journey— from the joy of Your welcome in Jerusalem, to the pain of Your betrayal and crucifixion, and to the silence of the tomb. Help us to understand that in every suffering, there is purpose, and in every sacrifice, there is love. Forgive us, O Lord, for the times we have turned away from You, for our sins, our doubts, and our weaknesses. Cleanse our hearts and renew our spirits, so that we may become worthy of Your grace. As we reflect on Your Passion, help us to carry our own crosses with faith and courage. Teach us to love as You have loved, to forgive as You have forgiven, and to serve others with humility and compassion. May this Holy Week be a time of true conversion for us— a time to believe more deeply, to return to You sincerely, and to be transformed by Your mercy. And as we await the joy of Your Resurrection, fill our hearts with hope, peace, and new life. May we rise with You, leaving behind sin, and embracing the life You have prepared for us.
-            We offer this prayer to You, with faith and trust in Your everlasting love. Amen.`}
+            {`Heavenly Father, as we enter this Holy Week, we come before You with humble hearts. We remember the suffering, sacrifice, and great love of Your Son, Jesus Christ, who gave His life for our salvation.
+
+Lord Jesus, teach us to walk with You in Your journey— from the joy of Your welcome in Jerusalem, to the pain of Your betrayal and crucifixion, and to the silence of the tomb. Help us to understand that in every suffering, there is purpose, and in every sacrifice, there is love.
+
+Forgive us, O Lord, for the times we have turned away from You, for our sins, our doubts, and our weaknesses. Cleanse our hearts and renew our spirits, so that we may become worthy of Your grace.
+
+As we reflect on Your Passion, help us to carry our own crosses with faith and courage. Teach us to love as You have loved, to forgive as You have forgiven, and to serve others with humility and compassion.
+
+May this Holy Week be a time of true conversion for us— a time to believe more deeply, to return to You sincerely, and to be transformed by Your mercy.
+
+And as we await the joy of Your Resurrection, fill our hearts with hope, peace, and new life. May we rise with You, leaving behind sin, and embracing the life You have prepared for us.
+
+We offer this prayer to You, with faith and trust in Your everlasting love. Amen.`}
           </div>
         </div>
       </section>
