@@ -1,5 +1,5 @@
-'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const scheduleItems = [
   { subtitle: 'Palm Sunday', image: '/PalmSunday.webp' },
@@ -101,7 +101,7 @@ export default function Page() {
       <div className="landing-wrapper">
         {/* Hero Section */}
         <section className="hero" id="home">
-          <img src="/logo.webp" alt="SJP2 Logo" className="hero-logo-img" />
+          <Image src="/logo.webp" alt="SJP2 Logo" className="hero-logo-img" width={200} height={200} priority />
           <h1>ST. JOHN PAUL II PARISH</h1>
           <p className="subtitle">Semana Santa 2026</p>
           <div className="bible-quote">
@@ -140,7 +140,7 @@ export default function Page() {
               </p>
             </div>
             <a href="https://www.facebook.com/profile.php?id=100080028258021" target="_blank" rel="noopener noreferrer" className="about-image-wrapper">
-              <img src="/ChurchOutside.webp" alt="St. John Paul II Parish" />
+              <Image src="/ChurchOutside.webp" alt="St. John Paul II Parish" width={800} height={600} style={{ width: '100%', height: 'auto' }} />
             </a>
           </div>
         </section>
@@ -169,7 +169,7 @@ export default function Page() {
 
         <div className="vigil-layout">
           <div className="vigil-image-wrapper">
-            <img src="/vigil.jpg" alt="Maundy Thursday Vigil" className="vigil-image" />
+            <Image src="/vigil.webp" alt="Maundy Thursday Vigil" className="vigil-image" width={800} height={600} style={{ width: '100%', height: 'auto' }} />
           </div>
 
           <div className="vigil-table-wrapper glass-panel">
@@ -217,7 +217,7 @@ export default function Page() {
           <div className="senakulo-premier">
             <div className="senakulo-poster-wrapper">
               <a href="https://www.facebook.com/share/p/1DHZf8NTH3/" target="_blank" rel="noopener noreferrer">
-                <img src="/Senakulo.webp" alt="Senakulo Poster" className="senakulo-poster" />
+                <Image src="/Senakulo.webp" alt="Senakulo Poster" className="senakulo-poster" width={600} height={800} style={{ width: '100%', height: 'auto' }} />
               </a>
             </div>
             <div className="senakulo-premier-text glass-panel">
@@ -260,7 +260,7 @@ export default function Page() {
               <div className="carousel-track scroll-left-7">
                 {[...Array(7).keys(), ...Array(7).keys()].map((i, idx) => (
                   <div className="carousel-slide" key={`cast-r1-${idx}`}>
-                    <img src={`/${i}.png`} alt={`Cast member ${i}`} loading="lazy" />
+                    <Image src={`/${i}.webp`} alt={`Cast member ${i}`} width={320} height={400} loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -270,7 +270,7 @@ export default function Page() {
               <div className="carousel-track scroll-right-6">
                 {[[7, 8, 10, 11, 12, 13], [7, 8, 10, 11, 12, 13]].flat().map((i, idx) => (
                   <div className="carousel-slide" key={`cast-r2-${idx}`}>
-                    <img src={`/${i}.png`} alt={`Cast member ${i}`} loading="lazy" />
+                    <Image src={`/${i}.webp`} alt={`Cast member ${i}`} width={320} height={400} loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -285,7 +285,7 @@ export default function Page() {
               <div className="carousel-track scroll-left-7">
                 {[...Array(7).keys(), ...Array(7).keys()].map((i, idx) => (
                   <div className="carousel-slide" key={`team-r1-${idx}`}>
-                    <img src={`/${i + 14}.png`} alt={`Team member ${i + 14}`} loading="lazy" />
+                    <Image src={`/${i + 14}.webp`} alt={`Team member ${i + 14}`} width={320} height={400} loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -295,7 +295,7 @@ export default function Page() {
               <div className="carousel-track scroll-right-6">
                 {[...Array(6).keys(), ...Array(6).keys()].map((i, idx) => (
                   <div className="carousel-slide" key={`team-r2-${idx}`}>
-                    <img src={`/${i + 21}.png`} alt={`Team member ${i + 21}`} loading="lazy" />
+                    <Image src={`/${i + 21}.webp`} alt={`Team member ${i + 21}`} width={320} height={400} loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -305,7 +305,7 @@ export default function Page() {
               <div className="carousel-track scroll-left-6">
                 {[...Array(6).keys(), ...Array(6).keys()].map((i, idx) => (
                   <div className="carousel-slide" key={`team-r3-${idx}`}>
-                    <img src={`/${i + 27}.png`} alt={`Team member ${i + 27}`} loading="lazy" />
+                    <Image src={`/${i + 27}.webp`} alt={`Team member ${i + 27}`} width={320} height={400} loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -315,7 +315,7 @@ export default function Page() {
               <div className="carousel-track scroll-right-6">
                 {[...Array(6).keys(), ...Array(6).keys()].map((i, idx) => (
                   <div className="carousel-slide" key={`team-r4-${idx}`}>
-                    <img src={`/${i + 33}.png`} alt={`Team member ${i + 33}`} loading="lazy" />
+                    <Image src={`/${i + 33}.webp`} alt={`Team member ${i + 33}`} width={320} height={400} loading="lazy" />
                   </div>
                 ))}
               </div>
