@@ -251,6 +251,76 @@ export default function Page() {
               </div>
             </div>
           </div>
+
+          {/* Cast of Senakulo Carousel */}
+          <div className="senakulo-carousel-section">
+            <h3 className="carousel-title">Cast of Senakulo</h3>
+            {/* Row 1: images 0-6 */}
+            <div className="carousel-wrapper">
+              <div className="carousel-track scroll-left-7">
+                {[...Array(7).keys(), ...Array(7).keys()].map((i, idx) => (
+                  <div className="carousel-slide" key={`cast-r1-${idx}`}>
+                    <img src={`/${i}.png`} alt={`Cast member ${i}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Row 2: images 7,8,10-13 (skipping 9) */}
+            <div className="carousel-wrapper">
+              <div className="carousel-track scroll-right-6">
+                {[[7, 8, 10, 11, 12, 13], [7, 8, 10, 11, 12, 13]].flat().map((i, idx) => (
+                  <div className="carousel-slide" key={`cast-r2-${idx}`}>
+                    <img src={`/${i}.png`} alt={`Cast member ${i}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Team Behind the Senakulo Carousel */}
+          <div className="senakulo-carousel-section">
+            <h3 className="carousel-title">Team Behind the Senakulo</h3>
+            {/* Row 1: images 14-20 (7 images) */}
+            <div className="carousel-wrapper">
+              <div className="carousel-track scroll-left-7">
+                {[...Array(7).keys(), ...Array(7).keys()].map((i, idx) => (
+                  <div className="carousel-slide" key={`team-r1-${idx}`}>
+                    <img src={`/${i + 14}.png`} alt={`Team member ${i + 14}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Row 2: images 21-26 (6 images) */}
+            <div className="carousel-wrapper">
+              <div className="carousel-track scroll-right-6">
+                {[...Array(6).keys(), ...Array(6).keys()].map((i, idx) => (
+                  <div className="carousel-slide" key={`team-r2-${idx}`}>
+                    <img src={`/${i + 21}.png`} alt={`Team member ${i + 21}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Row 3: images 27-32 (6 images) */}
+            <div className="carousel-wrapper">
+              <div className="carousel-track scroll-left-6">
+                {[...Array(6).keys(), ...Array(6).keys()].map((i, idx) => (
+                  <div className="carousel-slide" key={`team-r3-${idx}`}>
+                    <img src={`/${i + 27}.png`} alt={`Team member ${i + 27}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Row 4: images 33-38 (6 images) */}
+            <div className="carousel-wrapper">
+              <div className="carousel-track scroll-right-6">
+                {[...Array(6).keys(), ...Array(6).keys()].map((i, idx) => (
+                  <div className="carousel-slide" key={`team-r4-${idx}`}>
+                    <img src={`/${i + 33}.png`} alt={`Team member ${i + 33}`} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

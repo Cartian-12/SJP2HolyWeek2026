@@ -569,6 +569,128 @@ a:hover {
   color: var(--text-secondary);
 }
 
+/* Senakulo Carousels */
+.senakulo-carousel-section {
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.carousel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--accent-gold);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1rem;
+  mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.05);
+}
+
+/* Scroll classes — 7 items per row: 7 × (20rem + 1rem) = 147rem */
+.scroll-left-7 {
+  animation: scrollLeft7 80s linear infinite;
+}
+
+.scroll-right-7 {
+  animation: scrollRight7 80s linear infinite;
+}
+
+/* 6 items per row: 6 × (20rem + 1rem) = 126rem */
+.scroll-left-6 {
+  animation: scrollLeft6 70s linear infinite;
+}
+
+.scroll-right-6 {
+  animation: scrollRight6 70s linear infinite;
+}
+
+@keyframes scrollLeft7 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-7 * (20rem + 1rem))); }
+}
+
+@keyframes scrollRight7 {
+  0% { transform: translateX(calc(-7 * (20rem + 1rem))); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes scrollLeft6 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-6 * (20rem + 1rem))); }
+}
+
+@keyframes scrollRight6 {
+  0% { transform: translateX(calc(-6 * (20rem + 1rem))); }
+  100% { transform: translateX(0); }
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    width: 14rem;
+    height: 17.5rem;
+  }
+
+  .carousel-title {
+    font-size: 1.4rem;
+  }
+
+  @keyframes scrollLeft7 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-7 * (14rem + 1rem))); }
+  }
+
+  @keyframes scrollRight7 {
+    0% { transform: translateX(calc(-7 * (14rem + 1rem))); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes scrollLeft6 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-6 * (14rem + 1rem))); }
+  }
+
+  @keyframes scrollRight6 {
+    0% { transform: translateX(calc(-6 * (14rem + 1rem))); }
+    100% { transform: translateX(0); }
+  }
+}
+
 /* Apostles Section */
 .apostles-grid {
   display: grid;
